@@ -1,0 +1,58 @@
+---
+title: 欢迎来到我的网站
+description: 一个很杂的资料库
+template: splash
+hero:
+  tagline: 一个很杂的资料库
+  actions:
+    - text: 开始
+      link: /zh-cn/guides/readme/
+      icon: right-arrow
+      variant: primary
+    - text: 在GitHub上查看
+      link: https://github.com/731016/study-notes
+      icon: external
+---
+
+import {
+  Card,
+  CardGrid,
+  LinkCard,
+  Icon,
+  Image,
+} from "@astrojs/starlight/components";
+
+#### 刷题网站
+
+<CardGrid stagger>
+  <LinkCard
+    title="炼码"
+    description="在线实操提升技能，专业刷题评测，高效进阶学习体验。"
+    href="https://www.lintcode.com/"
+  />
+  <LinkCard
+    title="赛码"
+    description="名企真题。"
+    href="https://www.acmcoder.com/#/practice/company"
+  />
+  <LinkCard
+    title="牛客网"
+    description="牛客网 - 找工作神器|笔试题库|面试经验|实习招聘内推，求职就业一站解决_牛客网。"
+    href="https://www.nowcoder.com/"
+  />
+</CardGrid>
+
+#### 关于我
+
+<div class="not-content">
+  <p>
+    <a href="https://blog.csdn.net/qq_41666142" target="_blank">
+      <img src="https://img.shields.io/badge/CSDN-989,588%E6%80%BB%E8%AE%BF%E9%97%AE%E9%87%8F-blue" />
+    </a>
+  </p>
+  <p>
+    <a href="https://github.com/731016" target="_blank">
+      <img src="https://img.shields.io/github/stars/731016?style=social" />
+    </a>
+  </p>
+</div>
