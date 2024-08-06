@@ -1,10 +1,12 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import starlightImageZoom from 'starlight-image-zoom'
 
 // https://astro.build/config
 export default defineConfig({
 	integrations: [
 		starlight({
+			plugins: [starlightImageZoom()],
 			title: '小飞的学习笔记',
 			defaultLocale: 'zh-cn',
 			locales: {
@@ -56,7 +58,7 @@ export default defineConfig({
 				},
 			],
 			editLink: {
-				baseUrl: 'https://github.com/731016/study-notes',
+				baseUrl: 'https://github.com/731016/study-notes-astro',
 			},
 			credits: true
 		}),
