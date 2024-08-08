@@ -1,6 +1,6 @@
 ---
-title: git
-description: git
+title: jsp + servlet
+description: jsp + servlet
 ---
 # JSP + servlet
 

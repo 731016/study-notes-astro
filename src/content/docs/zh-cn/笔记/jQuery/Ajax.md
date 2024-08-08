@@ -1,6 +1,6 @@
 ---
-title: jQuery
-description: jQuery
+title: ajax
+description: ajax
 ---
 # Ajax
 

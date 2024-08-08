@@ -43,7 +43,7 @@ export default defineConfig({
 						{ label: 'Redis', collapsed: false, autogenerate: { directory: '笔记/Redis' } },
 						{ label: '消息队列', collapsed: false, autogenerate: { directory: '笔记/消息队列' } },
 						{ label: 'linux', collapsed: false, autogenerate: { directory: '笔记/linux' } },
-						{ label: '项目', collapsed: false, autogenerate: { directory: '笔记/项目' } },
+						{ label: '项目', collapsed: false, autogenerate: { directory: '笔记/项目' }, badge: { text: 'New', variant: 'danger', size: 'large' } },
 						{ label: '面试', collapsed: true, autogenerate: { directory: '笔记/面试' } },
 						{ label: '开发环境配置', collapsed: true, autogenerate: { directory: '笔记/开发环境配置' } },
 						{ label: 'c语言', collapsed: true, autogenerate: { directory: '笔记/c语言' } },
@@ -51,14 +51,14 @@ export default defineConfig({
 						{ label: '计算机网络', collapsed: true, autogenerate: { directory: '笔记/计算机网络' } },
 						{ label: '劳动合同法', collapsed: true, autogenerate: { directory: '笔记/劳动合同法' } },
 						{ label: '高等数学', collapsed: true, autogenerate: { directory: '笔记/高等数学' } },
-						{ label: '代码库', collapsed: true, autogenerate: { directory: '笔记/代码库' } },
-						
+						{ label: '代码库', collapsed: true, autogenerate: { directory: '笔记/代码库' }, badge: { text: '实验', variant: 'caution' } },
+
 
 					],
 				},
 			],
 			editLink: {
-				baseUrl: 'https://github.com/731016/study-notes-astro',
+				baseUrl: 'https://github.com/731016/study-notes-astro/tree/main',
 			},
 			credits: true
 		}),

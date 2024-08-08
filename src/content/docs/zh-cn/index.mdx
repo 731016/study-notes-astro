@@ -20,27 +20,60 @@ import {
   LinkCard,
   Icon,
   Image,
+  TabItem,
+  Tabs,
+  FileTree,
+  Steps 
 } from "@astrojs/starlight/components";
 
-#### 刷题网站
+<FileTree>
+    - src
+      - assets/
+      - content
+        - docs
+          - en
+          - zh-cn
+            - index.mdx
+            - guides
+              - readme.md
+            - 笔记
+              - C语言
+              - JavaSE
+              - redis
+            - ...
+        - config.ts
+      - pages/
+      - env.d.ts
+    - .gitignore
+    - astro.config.mjs
+    - readme.mdx
+    - tsconfig.json
+</FileTree>
 
-<CardGrid stagger>
-  <LinkCard
-    title="炼码"
-    description="在线实操提升技能，专业刷题评测，高效进阶学习体验。"
-    href="https://www.lintcode.com/"
-  />
-  <LinkCard
-    title="赛码"
-    description="名企真题。"
-    href="https://www.acmcoder.com/#/practice/company"
-  />
-  <LinkCard
-    title="牛客网"
-    description="牛客网 - 找工作神器|笔试题库|面试经验|实习招聘内推，求职就业一站解决_牛客网。"
-    href="https://www.nowcoder.com/"
-  />
-</CardGrid>
+<Tabs>
+  <TabItem label="刷题网站" icon="document">
+    <CardGrid stagger>
+      <LinkCard
+        title="炼码"
+        description="在线实操提升技能，专业刷题评测，高效进阶学习体验。"
+        href="https://www.lintcode.com/"
+      />
+      <LinkCard
+        title="赛码"
+        description="名企真题。"
+        href="https://www.acmcoder.com/#/practice/company"
+      />
+      <LinkCard
+        title="牛客网"
+        description="牛客网 - 找工作神器|笔试题库|面试经验|实习招聘内推，求职就业一站解决_牛客网。"
+        href="https://www.nowcoder.com/"
+      />
+    </CardGrid>
+  </TabItem>
+  <TabItem label="其它" icon="bars">
+    敬请期待！
+  </TabItem>
+</Tabs>
 
 #### 关于我
 
